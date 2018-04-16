@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="35C5B6CC-E649-4D6A-BD58-87E9A0FB3A6C">
+    <dependencies>
+        
+        <deployment version="4352" identifier="iOS"/><plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        
+    </dependencies>
+    <scenes>
+        <!--NavigationController-->
+        <scene sceneID="36CE6481-2C87-4DA9-9F29-AE34AE519028">
+            <objects>
+                <navigationController id="35C5B6CC-E649-4D6A-BD58-87E9A0FB3A6C" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="E7186370-9A71-4688-B39F-D2232B9EEE3D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <size key="freeformSize" width="320" height="480"/>
+                    
+                    <connections>
+                        <segue destination="1D478520-8D7A-4025-83A8-3FE77E5C7D40" kind="relationship" relationship="rootViewController" id="365BE9EE-76C8-4180-AAB4-789281B04A83"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4891D92D-AAD2-4A11-8D3D-26ABE7A6E431" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Screen-->
+        <scene sceneID="C1034961-B5F5-423E-8A9F-858C24B602AA">
+            <objects>
+                <viewController title="View Controller" storyboardIdentifier="Screen" id="1D478520-8D7A-4025-83A8-3FE77E5C7D40" customClass="Screen" customModule="Dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view contentMode="scaleToFill" key="view" id="D50E9AEC-2A6E-4779-A605-F1ED13FC3D75">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320.0" height="480.0"/>
+                        <subviews>
+                            <imageView translatesAutoresizingMaskIntoConstraints="NO" image="blank" contentMode="scaleAspectFill" clipsSubviews="YES" id="B76BE809-F025-4960-85BD-075498D323FF">
+                                <rect key="frame" x="0.0" y="0.0" width="320.0" height="480.0"/>
+                                
+                                <constraints>
+                                    
+                                    
+                                    
+                                </constraints>
+                                
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1.0" green="1.0" blue="1.0" alpha="1.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B76BE809-F025-4960-85BD-075498D323FF" firstAttribute="top" secondItem="49FCD885-807E-4C24-A8B2-EA6B7EFFB0FC" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="0.0" id="BC5A21F1-EC7E-4CF7-B323-C214157F1B09"/>
+                            <constraint firstItem="B76BE809-F025-4960-85BD-075498D323FF" firstAttribute="bottom" secondItem="D50E9AEC-2A6E-4779-A605-F1ED13FC3D75" secondAttribute="bottom" priority="1000.0" multiplier="1.0" constant="0.0" id="BED56676-3AC2-4EF2-B213-C844A8E22629"/>
+                            <constraint firstItem="B76BE809-F025-4960-85BD-075498D323FF" firstAttribute="leading" secondItem="D50E9AEC-2A6E-4779-A605-F1ED13FC3D75" secondAttribute="leading" priority="1000.0" multiplier="1.0" constant="0.0" id="27FCBC79-DF7C-441F-BD66-55D6CEFE3F6E"/>
+                            <constraint firstItem="B76BE809-F025-4960-85BD-075498D323FF" firstAttribute="trailing" secondItem="D50E9AEC-2A6E-4779-A605-F1ED13FC3D75" secondAttribute="trailing" priority="1000.0" multiplier="1.0" constant="0.0" id="587E0EED-C487-4244-B08C-BB8EF76A0FB7"/>
+                            
+                            
+                            
+                        </constraints>
+                        
+                    </view>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <constraints>
+                    </constraints>
+                    <layoutGuides>
+                    <viewControllerLayoutGuide type="top" id="49FCD885-807E-4C24-A8B2-EA6B7EFFB0FC"/>
+                        </layoutGuides>
+                    <connections>
+                        <outlet property="image" destination="B76BE809-F025-4960-85BD-075498D323FF" id="0D23B465-7ED8-44B8-B103-3AD1C80ECB74"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82B91337-307B-49A0-AF8C-6CDB03385295" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blank" width="32" height="32"/>
+    </resources>
+</document>
